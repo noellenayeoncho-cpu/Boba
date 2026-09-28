@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How Sweet Should Your Boba Be?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        How Sweet Should Your Boba Be?
+    </header>
+
+    <h1>Pick a sweetness level</h1>
+    <p>How sweet do you want your boba?</p>
+
+    <div class="choices">
+
+        <a href="ice.html" onclick="localStorage.setItem('sweetness', 'less')">
+            <img src="Images/less.png" alt="Less Sweet" class="choice-img">
+        </a>
+
+        <a href="ice.html" onclick="localStorage.setItem('sweetness', 'mid')">
+            <img src="Images/mid.png" alt="Normal Sweetness" class="choice-img">
+        </a>
+
+        <a href="ice.html" onclick="localStorage.setItem('sweetness', 'most')">
+            <img src="Images/most.png" alt="More Sweet" class="choice-img">
+        </a>
+
+    </div>
+
+</body>
+</html>
