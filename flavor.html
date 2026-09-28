@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Choose Your Flavor!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        Choose Your Flavor!
+    </header>
+
+    <h1>Pick a flavor</h1>
+    <p>What kind of boba do you want?</p>
+
+    <div class="choices">
+
+    <a href="toppings.html" onclick="localStorage.setItem('flavor', 'brown')">
+        <img src="Images/brown.png" alt="Brown Sugar" class="choice-img">
+    </a>
+
+    <a href="toppings.html" onclick="localStorage.setItem('flavor', 'taro')">
+        <img src="Images/taro.png" alt="Taro" class="choice-img">
+    </a>
+
+    <a href="toppings.html" onclick="localStorage.setItem('flavor', 'matcha')">
+        <img src="Images/matcha.png" alt="Matcha" class="choice-img">
+    </a>
+
+</div>
+
+</body>
+</html>
