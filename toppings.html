@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Your Toppings!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        Choose Your Toppings!
+    </header>
+    <h1>Pick a topping</h1>
+    <p>What do you want in your boba?</p>
+    <div class="choices">
+        <a href="sweets.html" onclick="localStorage.setItem('topping', 'tapioca')">
+            <img src="Images/tapioca.png" alt="Tapioca Pearls" class="choice-img">
+        </a>
+
+        <a href="sweets.html" onclick="localStorage.setItem('topping', 'popping')">
+            <img src="Images/popping.png" alt="Popping Boba" class="choice-img">
+        </a>
+
+        <a href="sweets.html" onclick="localStorage.setItem('topping', 'coconut')">
+            <img src="Images/coconut.png" alt="Coconut Jelly" class="choice-img">
+        </a>
+
+    </div>
+
+</body>
+
+</html>
