@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Your Boba Is Ready!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <header>
+        Your Boba Is Ready!
+    </header>
+
+    <h1>Your Perfect Boba!</h1>
+
+    <p id="choices"></p>
+
+    <img id="boba" class="result-img">
+
+    <script>
+
+        let flavor = localStorage.getItem("flavor");
+
+        let topping = localStorage.getItem("topping");
+
+        let sweetness = localStorage.getItem("sweetness");
+
+        let ice = localStorage.getItem("ice");
+
+
+        document.getElementById("choices").innerHTML =
+            flavor + " + " + topping + " + " + sweetness + " sweetness + " + ice + " ice";
+
+
+        let bobaImage = "Images/" + flavor + "-" + topping + "-" + ice + ".png";
+
+
+        document.getElementById("boba").src = bobaImage;
+
+    </script>
+
+</body>
+
+</html>
